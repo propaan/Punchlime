@@ -1,0 +1,83 @@
+$bg-color: #0F1215;
+$color: #ADF802;
+
+@font-face {
+    font-family: "CD-Bold";
+    src: url("../assets/fonts/CD-Bold.otf");
+}
+
+@font-face {
+    font-family: "CD-Medium";
+    src: url("../assets/fonts/CD-Medium.otf");
+}
+
+body {
+    background-image: url("../assets/images/background.png");
+}
+
+#navbar {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    #brand {
+        color: white;
+        font-family: "CD-Bold";
+        font-size: 64px;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+.navigation {
+    font-family: "CD-Medium";
+    color: white;
+    font-size: 40px;
+    padding: 5px 20px 5px 20px;
+}
+
+#active {
+    margin-left: auto;
+    color: $color;
+}
+
+#connexion {
+    background-color: $color;
+    border-radius: 22px;
+    margin-right: 50px;
+    color: black;
+}
+
+::selection {
+    background-color: $color;
+}
+#v-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#presentation {
+    font-family: "CD-Bold";
+    color: white;
+    text-align: center;
+}
+
+#btn-jouer {
+    width: min-content;
+    padding: 15px 50px 15px 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: $color;
+    font-family: "CD-Medium";
+    border: none;
+}
+
+#btn-jouer:hover {
+    cursor: pointer;
+}
